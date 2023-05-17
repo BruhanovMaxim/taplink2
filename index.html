@@ -2,46 +2,45 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
-    <title>YuliaBruhanova</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>YuliyaV2</title>
   </head>
   <body>
     <div class="wrapper">
       <div class="container">
-        <header class="header">
-          <img class="logo" src="img/avatar.svg" alt="logo" />
-          <div class="name">Брюханова Юлия</div>
-          <div class="discription">В моем словаре нет слова «невозможно» <span class="material-symbols-outlined"> self_improvement </span></div>
-        </header>
-        <main class="main">
-          <div class="about">
-            <p class="format_text">
-              Меня зовут Юлька красотулька я люблю похомячить особенно шоколадки, конфетки, пирожочки. Я супер скромный профессионал в сфере бьюти красоты уже 5
-              лет, создаю красоту всемирного масштаба.
-            </p>
+        <header class="container__header">
+          <div class="header__logo">
+            <img class="logo" src="./img/avatar.svg" alt="logo" />
           </div>
-          <div class="buttons">
-            <button class="btn btn_1" onclick="window.location.href = 'сourses.html';">МОИ КУРСЫ</button>
-            <button class="btn btn_2" onclick="window.location.href = 'services.html';">МОИ УСЛУГИ</button>
+          <div class="name">Брюханова Юлия</div>
+          <div class="header__description">
+            <p>В моем словаре нет слова «невозможно»</p>
+          </div>
+        </header>
+        <main class="container__main">
+          <div class="main__about">
+            Меня зовут Юлька красотулька я люблю похомячить особенно шоколадки, конфетки, пирожочки. Я супер скромный профессионал в сфере бьюти красоты уже 5
+            лет, создаю красоту всемирного масштаба.
+          </div>
+          <div class="main__buttons">
+            <button class="btn" onclick="window.location.href = 'сourses.html';">МОИ КУРСЫ</button>
+            <button class="btn" onclick="window.location.href = 'services.html';">МОИ УСЛУГИ</button>
           </div>
         </main>
-        <div class="social">
-          <a href="">
-            <img class="icons" src="img/W.svg" alt="whatsapp" width="48" height="48" />
-          </a>
-          <a href="">
-            <img class="icons" src="img/T.svg" alt="telegram" width="48" height="48" />
-          </a>
-          <a href="">
-            <img class="icons" src="img/i.svg" alt="instagram" width="48" height="48" />
-          </a>
-        </div>
+        <footer class="container__footer">
+          <div class="footer_sociallinks">
+            <a href="">
+              <img class="icons" src="img/W.svg" alt="whatsapp" width="48" height="48" />
+            </a>
+            <a href="">
+              <img class="icons" src="img/T.svg" alt="telegram" width="48" height="48" />
+            </a>
+            <a href="">
+              <img class="icons" src="img/i.svg" alt="instagram" width="48" height="48" />
+            </a>
+          </div>
+        </footer>
       </div>
     </div>
   </body>

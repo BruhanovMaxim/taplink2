@@ -24,7 +24,7 @@ body {
 }
 
 .wrapper {
-  margin: 20px;
+  /* margin: 20px; */
   width: 100%;
   max-width: 450px;
   margin: 0 auto;
@@ -42,7 +42,7 @@ body {
   padding: 30px;
   margin: 0 auto;
   margin-inline: auto;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   box-shadow: var(--shadow);
   overflow-x: hidden;
 }
@@ -52,13 +52,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin: 30px 0 0 0;
 }
 .logo {
   width: 10em;
 }
 .name {
-  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0 0.5em 0;
   font-size: 2em;
 }
 .header__description {
@@ -78,23 +81,25 @@ body {
   grid-gap: 25px;
 }
 .btn {
-  color: aliceblue;
+  color: rgb(150, 150, 150);
   padding: 20px 40px;
   background: none;
   border: 1px solid;
   border-radius: 8px;
+  cursor: pointer;
 }
 .back_button {
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 1.5rem;
 }
+
 /*---------------------------------------------- SOCIAL icons ----------------------------------------*/
 .footer_sociallinks {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  gap: 20px;
+  gap: 50px;
 }
 .icons {
   opacity: 15%;
