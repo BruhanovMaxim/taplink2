@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+  --color-header: rgb(255, 255, 255);
+  --color-text: rgb(200, 200, 200);
+  --box-shadow: 1px 4px 4px 5px rgba(104, 104, 104, 0.3);
+  --background_1: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+  --background_2: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  --background_3: linear-gradient(-225deg, #20e2d7 0%, #f9fea5 100%);
+  --background_4: linear-gradient(-225deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%);
+  --background_5: linear-gradient(-225deg, #473b7b 0%, #3584a7 51%, #30d2be 100%);
+  --background_6: linear-gradient(to top, #007adf 0%, #00ecbc 100%);
+  --background_7: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  --background_8: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  --background_9: linear-gradient(to top, #09203f 0%, #537895 100%);
+  --background_10: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+  --background_12: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+body {
+  color: white;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/*------------------------------------ GRID (Стили для общего контейнера) --------------------------------*/
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  min-height: 100vh;
+  background-image: var(--background_8);
+  background-blend-mode: multiply;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "social"
+    "footer";
+  /* justify-items: center; */
+  max-width: 450px;
+  max-height: 100%;
+}
+
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+.social {
+  grid-area: social;
+}
+
+/*---------------------------------------------- Стили для шапки ---------------------------------------*/
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-items: center;
+  padding: 20px;
+  color: var(--color-header);
+}
+
+.logo {
+  width: 256;
+  margin-top: 5vh; /* 40px */
+}
+
+.name {
+  padding-top: 30px;
+  font-size: 32px;
+}
+
+.img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 50px;
+}
+
+/*---------------------------------- Стили для основного контента -------------------------------------*/
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/*-------------------------------------------- Стили для описания -------------------------------------*/
+
+.discription {
+  text-align: center;
+}
+
+/*-------------------------------------------- Стили для кнопок ---------------------------------------*/
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+}
+
+.btn {
+  padding: 20px 40px;
+  background: none;
+  border: 1px solid;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.btn:hover {
+  opacity: 100%;
+}
+.buttons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background-color: #00ecbc;
+  transform: scaleX(0) skewX(35deg);
+  transform-origin: left;
+  transition: transform 1s;
+}
+
+/*------------------------------------------------- FOOTER ---------------------------------------------*/
+
+/*---------------------------------------------- SOCIAL icons ----------------------------------------*/
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 20px;
+}
+.icons {
+  opacity: 15%;
+}
+.icons:hover {
+  opacity: 50%;
+}
+
+/*---------------------------------------------- MyCours ---------------------------------------------*/
+.format_text {
+  text-align: justify;
+  padding-bottom: 50px;
+  font-style: italic;
+}
+.price_list {
+  padding-bottom: 30px;
+}
+.card_courses {
+  text-align: justify;
+  font-style: italic;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.card_services {
+  text-align: justify;
+  font-style: italic;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.h123 {
+  margin: 15px 0px 15px 0px;
+}
+
+.price {
+  text-align: center;
+  margin: 30px 0px 20px 0px;
+}
+
+/*-------------------------------------------- Таблица - Прайс -----------------------------------------*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border-bottom: 1px solid #5f5f5f;
+}
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+/*--------------------------------------- медиа-запросы ---------------------------------------------*/
+
+/* @media (max-width: 1200px) {
+  .container {
+    width: 1000px;
+    grid-template-columns: 1fr 280px;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 768px;
+    grid-template-columns: 1fr 250px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 480px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+} */
