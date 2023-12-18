@@ -45,12 +45,12 @@ body {
 .icons{
   border: 2px solid rgb(132, 0, 255);
 } */
-/* .container{
+.container{
   border: 1px solid rgb(255, 77, 0);
-} */
-/* .footer{
+}
+.footer{
   border: 2px solid rgb(225, 255, 0);
-} */
+}
 
 /*-------------------------- ADAPTIVE --------------------------*/
 .container {
@@ -74,12 +74,12 @@ body {
   justify-content: center
 }
 .card{
-  padding: 0px 50px 50px 50px;
+  padding: 0px 25px 25px 25px;
   max-width: 400px;
   background-color: var(--item_color);
   border-radius: 8px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
+  margin-bottom: 30px 10px 30px 10px;
 }
 .ch2{
   margin: 20px 0;
